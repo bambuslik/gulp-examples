@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--DEV вставляем header.html-->
+@@include('includes/header.html')
+
+<!--DEV вставляем nav.html-->
+@@include('includes/nav.html')
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, voluptatum
+
+<!--DEV вставляем footer.html, передаем значение в подключаемый файл-->
+@@include('includes/footer.html', {
+    "site-name": "gulp examples"
+})
+</body>
+</html>
+
+<!--DEV
+    комментарий разработчика
+    он удалится во время сборки
+    он может быть многострочным
+-->
