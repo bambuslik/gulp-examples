@@ -168,7 +168,8 @@ gulp.task('hello:par', gulp.parallel('hello1', 'hello2'));
  Запуск задачи из терминала: ./node_modules/.bin/gulp build1
  */
 gulp.task('build1', function () {
-	return gulp.src('src/**/*.*')												//указываем источник, маска - все файлы во всех папках. паттерн - minimatch
+	return gulp.src('src/**/*.*')												//указываем источник, маска - все файлы во всех папках. паттерн - minimatch.
+	//test minimatch: http://www.globtester.com
 		.pipe(gulp.dest('build'));												//пропускаем через pipe, указываем папку-назначение
 });
 
